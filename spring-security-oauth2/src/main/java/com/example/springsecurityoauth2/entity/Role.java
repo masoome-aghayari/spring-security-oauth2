@@ -1,10 +1,12 @@
 package com.example.springsecurityoauth2.entity;
 
-import com.example.springsecurityoauth2.entity.enums.RoleName;
+import com.example.springsecurityoauth2.model.enums.RoleName;
+import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
+@Data
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
