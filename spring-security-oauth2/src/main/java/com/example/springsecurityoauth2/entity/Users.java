@@ -2,11 +2,7 @@ package com.example.springsecurityoauth2.entity;
 
 import lombok.Data;
 
-import javax.management.relation.Role;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -16,5 +12,7 @@ public class Users {
     private Long id;
     private String username;
     private String password;
+    @ManyToOne
+    @JoinColumn(name = "role_id")
     private Role role;
 }
