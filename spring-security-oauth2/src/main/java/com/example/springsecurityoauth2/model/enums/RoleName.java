@@ -1,4 +1,4 @@
-package com.example.springsecurityoauth2.entity.enums;
+package com.example.springsecurityoauth2.model.enums;
 
 public enum RoleName {
     ROLE_ADMIN,
